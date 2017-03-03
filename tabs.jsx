@@ -7,7 +7,6 @@ class Tabs extends React.Component {
     this.data = props.data;
 
     this.state = {title: this.data[0].title, content: this.data[0].content};
-    // this.currentTab = this.data[0];
     this.clickTab = this.clickTab.bind(this);
   }
 
@@ -23,7 +22,7 @@ class Tabs extends React.Component {
     ));
 
     return (
-      <header>
+      <header className="Tab">
         <ul>{tabs}</ul>
         <article>{this.state.content}</article>
       </header>
