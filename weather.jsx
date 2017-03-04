@@ -9,7 +9,7 @@ class Weather extends React.Component{
     let geo = Navigator.geolocation;
   }
   render(){
-    return(<h1>This is weaterh</h1>);
+    return(<h1>This is weather</h1>);
   }
 }
 
