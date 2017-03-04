@@ -4,7 +4,7 @@ import ReactDOM from "react-dom";
 class Weather extends React.Component{
   constructor(){
     super();
-    debugger;
+    // debugger;
     let nav = new Navigator();
     let geo = Navigator.geolocation;
   }

@@ -1,11 +1,12 @@
 {
   "name": "widgets",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --inline"
-  },
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack": "webpack",
+    "start" : "webpack-dev-server --inline"
+    },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -18,5 +19,14 @@
     "react-dom": "^15.4.2",
     "webpack": "^2.2.1",
     "webpack-dev-server": "^2.4.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/djfletcher/WidgetsPractice.git"
+  },
+  "bugs": {
+    "url": "https://github.com/djfletcher/WidgetsPractice/issues"
+  },
+  "homepage": "https://github.com/djfletcher/WidgetsPractice#readme",
+  "description": ""
 }
