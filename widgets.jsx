@@ -26,4 +26,9 @@ document.addEventListener("DOMContentLoaded", e => {
   ReactDOM.render(Widgets(tabs, weather), root);
 });
 
-const Widgets = (tabs, weather) => <div>{tabs}{weather}</div>;
+const Widgets = (tabs, weather) => (
+  <ul className="widgets">
+    <li>{tabs}</li>
+    <li>{weather}</li>
+  </ul>
+);

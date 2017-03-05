@@ -1,11 +1,22 @@
-body, header, ul, article, h1 {
-  font-family: inherit;
+body, header, ul, article, h1, h2 {
+  font-family: sans-serif;
   font-size: inherit;
   font-weight: inherit;
   background: inherit;
-
+  list-style-type:none;
   margin: 0;
   padding: 0;
+}
+
+.widgets {
+  display: flex;
+  flex-direction: column;
+}
+
+.widgets > li {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .Tab {
@@ -16,26 +27,60 @@ body, header, ul, article, h1 {
 .Tab > ul {
   display: flex;
   justify-content: space-around;
-  border-bottom: 1px solid grey;
 }
 
 .Tab > ul > h1 {
   border: 1px solid grey;
-  border-radius: 5px;
+  border-radius: 5px 5px 0 0;
   border-bottom: none;
-  background-color: #789db4;
+  background-color: lightblue;
+  padding: 6px;
 }
 
 .Tab > ul > h1:hover {
   cursor: pointer;
+  background-color:#0c475d;
+  color: white;
 }
 
 .Tab > article {
   height: 100px;
-  background-color: cornflowerblue;
-  border: 2px solid grey;
+  background-color: cornsilk;
+  border: 1px solid lightblue;
+  border-radius: 8px;
+  padding: 10px;
 }
 
 .weather-app {
-  border: 2px solid red;
+  display: flex;
+  justify-content: center;
+  background-color: cornsilk;
+  margin: 25px 25px;
+  width: 50%;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 20px;
+  background-color: lightblue;
+  padding: 10px;
+  border-radius: 8px 8px 0 0;
+}
+
+.weather-content {
+  width: 100%;
+}
+
+.weather-data {
+  padding: 10px;
+  border-radius: 0 0 8px 8px;
+  border: 1px solid lightblue;
+}
+
+.weather-data > li {
+  padding: 4px;
+  margin: 2px 2px;
+  background-color: lightgray;
+  border-radius: 5px;
+  font-size: 15px;
 }
