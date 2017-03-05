@@ -1,4 +1,4 @@
-body, header, ul, article, h1{
+body, header, ul, article, h1 {
   font-family: inherit;
   font-size: inherit;
   font-weight: inherit;
@@ -8,11 +8,12 @@ body, header, ul, article, h1{
   padding: 0;
 }
 
-.Tab{
+.Tab {
+  margin: 25px 25px;
   width: 50%;
 }
 
-.Tab > ul{
+.Tab > ul {
   display: flex;
   justify-content: space-around;
   border-bottom: 1px solid grey;
@@ -25,8 +26,16 @@ body, header, ul, article, h1{
   background-color: #789db4;
 }
 
+.Tab > ul > h1:hover {
+  cursor: pointer;
+}
+
 .Tab > article {
   height: 100px;
   background-color: cornflowerblue;
   border: 2px solid grey;
+}
+
+.weather-app {
+  border: 2px solid red;
 }

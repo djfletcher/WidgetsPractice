@@ -22,9 +22,8 @@ document.addEventListener("DOMContentLoaded", e => {
   let tabs = <Tabs data={allHash}/>;
   let weather = <Weather/>;
   const root = document.getElementById("root");
-  ReactDOM.render(<Tabs data={allHash}/>, root);
-  // ReactDOM.render(Widgets(tabs, weather), root);
-  // ReactDOM.render(<div>HELLO</div>, root);
+  // ReactDOM.render(<Tabs data={allHash}/>, root);
+  ReactDOM.render(Widgets(tabs, weather), root);
 });
 
 const Widgets = (tabs, weather) => <div>{tabs}{weather}</div>;
